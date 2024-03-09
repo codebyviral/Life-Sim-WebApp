@@ -1,14 +1,19 @@
-import './App.css'
+import "./App.css";
+import Landing from "./Pages/Landing";
+import { Routes, Route } from "react-router-dom";
+import StartGame from "./Pages/StartGame";
 
 function App() {
-
   return (
     <>
-    <div className="text-center fw-bold fs-1">
-      Indian Life Simulator
-    </div>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/StartGame" element={<StartGame />} />
+        </Routes>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
