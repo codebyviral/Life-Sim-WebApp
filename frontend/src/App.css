@@ -16,3 +16,10 @@ div.emoji-icon{
     position: relative;
     bottom: 80px;
 }
+.ageNav{
+    float: right;
+    margin-right: 130px;
+    position: relative;
+    bottom: 220px;
+    font-weight: bold;
+}
