@@ -1,10 +1,11 @@
 import React from 'react'
+import LifeNav from "../Components/LifeNav"
 
 const StartGame = () => {
   return (
-    <div>
-      Redirect Successful
-    </div>
+    <>
+    <LifeNav />
+    </>
   )
 }
 
