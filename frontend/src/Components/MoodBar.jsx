@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 
-const ProgressBar = () => {
-  const [lifeBar, setLifeBar] = useState(100);
+const MoodBar = () => {
+  const [moodBar, setmoodBar] = useState(100);
 
+  
   useEffect(() => {
     const interval = setInterval(() => {
-      setLifeBar((prevProgress) => (prevProgress > 0 ? prevProgress - 1 : 0));
-    }, 1000);
+      setmoodBar((LastProgress) => (LastProgress > 0 ? LastProgress - 1 : 0));
+    }, 6500);
     return () => clearInterval(interval);
   }, []);
+
   return (
     <>
       <div
@@ -19,10 +21,13 @@ const ProgressBar = () => {
         aria-valuemin="0"
         aria-valuemax="100"
       >
-        <div className="progress-bar bg-danger" style={{ width: `${lifeBar}%` }}></div>
+        <div
+          className="progress-bar bg-danger"
+          style={{ width: `${moodBar}%` }}
+        ></div>
       </div>
     </>
   );
 };
 
-export default ProgressBar;
+export default MoodBar;

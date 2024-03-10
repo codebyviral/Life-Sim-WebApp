@@ -1,4 +1,4 @@
-div.heart{
+div.emoji-icon{
     font-size: 25px;
     margin-left: 50px;
     margin-top: 50px;
@@ -7,4 +7,12 @@ div.heart{
     width: 200px;
     margin-left: 10px;
     margin-top: 63.5px;
+}
+.mood-bar{
+    position: relative;
+    bottom: 40px;
+}
+.logic-bar{
+    position: relative;
+    bottom: 80px;
 }
