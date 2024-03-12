@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const PlayerNav = () => {
-  const age = 18;
+  const [age,setAge] = useState(18);
   const [day, setDay] = useState(1);
   const [month,setMonth] = useState(1);
   const [year,setYear] = useState(2024);
@@ -19,6 +19,7 @@ const PlayerNav = () => {
   }
   if(month === 12){
     setYear(year + 1)
+    setAge(age + 1)
   }
   return (
     <>

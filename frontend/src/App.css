@@ -1,12 +1,17 @@
-div.emoji-icon{
-    font-size: 25px;
+.emoji-icon{
+    font-size: 20px;
     margin-left: 50px;
     margin-top: 50px;
 }
+
+#game-caption{
+    font-size: 28px;
+}
+
 .progress{
     width: 200px;
     margin-left: 10px;
-    margin-top: 63.5px;
+    margin-top: 59.5px;
 }
 .mood-bar{
     position: relative;
@@ -21,8 +26,56 @@ div.emoji-icon{
     margin-right: 130px;
     position: relative;
     bottom: 220px;
-    font-weight: bold;
 }
 div.days{
     margin-left: 70px;
+}
+
+.landing-div{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+/* Mobile Responsive CSS Code */
+
+@media only screen and (max-width:768px){
+    .progress{
+        position: relative;
+        top: 1%;
+        width: 100px;
+    }
+    .emoji-icon{
+        font-size: 20px;
+        margin-left: 23px;
+        margin-top: 50px;
+    }
+    .emoji-icon .progress{
+        position: relative;
+        top: 5%;
+    }
+    #game-caption{
+        font-size: 18px ;
+    }
+    .ageNav{
+        font-size: 19px;
+    }
+    .time-age{
+        float: left;
+    }
+    div.days{
+        float: right;
+        position: relative;
+        left: 40%;
+    }
+
+    .progressBars{
+        position: relative;
+    }
+
+    .custom-bar{
+        margin-top: 12px;
+    }
+
 }
