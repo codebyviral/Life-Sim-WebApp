@@ -38,6 +38,17 @@ div.days{
     left: 50%;
 }
 
+.identity-div{
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.identity-component{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 23%;
+}
 /* Mobile Responsive CSS Code */
 
 @media only screen and (max-width:768px){
@@ -78,5 +89,6 @@ div.days{
     .custom-bar{
         margin-top: 12px;
     }
+
 
 }
