@@ -59,8 +59,8 @@ div.days{
         font-size: 18px ;
     }
     .ageNav{
-        font-size: 15px;
-        white-space: nowrap;
+        font-size: 14px;
+        white-space: nowrap !important;
     }
     .time-age{
         float: left;
