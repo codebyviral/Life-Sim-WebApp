@@ -60,6 +60,7 @@ div.days{
     }
     .ageNav{
         font-size: 19px;
+        white-space: nowrap;
     }
     .time-age{
         float: left;
