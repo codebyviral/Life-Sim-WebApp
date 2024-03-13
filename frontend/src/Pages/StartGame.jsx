@@ -2,6 +2,7 @@ import React from 'react'
 import LifeNav from "../Components/LifeNav"
 import PlayerNav from '../Components/PlayerNav'
 import Identity from '../Components/Identity'
+import Avatar from '../Components/Avatar'
 
 const StartGame = () => {
   return (
@@ -10,6 +11,7 @@ const StartGame = () => {
     <PlayerNav />
     <div className='identity-component'>
       <Identity />
+      <Avatar />
     </div>
     </>
   )
