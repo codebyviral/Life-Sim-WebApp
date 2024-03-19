@@ -16,13 +16,13 @@ const LifeBar = () => {
       <div
         className="progress"
         role="progressbar"
-        aria-label="Danger example"
+        aria-label="Success example"
         aria-valuenow="100"
         aria-valuemin="0"
         aria-valuemax="100"
       >
         <div
-          className="progress-bar bg-danger"
+          className="progress-bar bg-success"
           style={{ width: `${lifeBar}%` }}
         ></div>
       </div>

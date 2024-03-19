@@ -3,10 +3,9 @@ import React, { useEffect, useState } from "react";
 const MoodBar = () => {
   const [moodBar, setmoodBar] = useState(100);
 
-  
   useEffect(() => {
     const interval = setInterval(() => {
-      setmoodBar((LastProgress) => (LastProgress > 0 ? LastProgress - 1 : 0));
+      setmoodBar((LastProgress) => (LastProgress > 0 ? LastProgress - 3 : 0));
     }, 6500);
     return () => clearInterval(interval);
   }, []);
@@ -16,13 +15,13 @@ const MoodBar = () => {
       <div
         className="progress"
         role="progressbar"
-        aria-label="Danger example"
+        aria-label="Success example"
         aria-valuenow="100"
         aria-valuemin="0"
         aria-valuemax="100"
       >
         <div
-          className="progress-bar bg-danger"
+        className={`progress-bar bg-${moodBar > 80 ? "success" : moodBar > 50 ? "warning" : "danger"}`}
           style={{ width: `${moodBar}%` }}
         ></div>
       </div>

@@ -2,16 +2,16 @@ import React from 'react'
 import LifeNav from "../Components/LifeNav"
 import PlayerNav from '../Components/PlayerNav'
 import Identity from '../Components/Identity'
-import Avatar from '../Components/Avatar'
+import DarkMode from '../Components/DarkMode'
 
 const StartGame = () => {
   return (
     <>
     <LifeNav />
     <PlayerNav />
+    <DarkMode />
     <div className='identity-component'>
       <Identity />
-      <Avatar />
     </div>
     </>
   )
