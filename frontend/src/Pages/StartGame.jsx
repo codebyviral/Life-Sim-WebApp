@@ -9,7 +9,7 @@ const StartGame = () => {
     <>
     <LifeNav />
     <PlayerNav />
-    <DarkMode />
+    {/* <DarkMode /> */}
     <div className='identity-component'>
       <Identity />
     </div>
